@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace my_bot
+namespace CSharpBot
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Запуск бота в консольном режиме. Нажмите Enter для завершения");
+            Bot bot = new Bot();
+            bot.Run();
+            Console.ReadLine();
         }
     }
 }
